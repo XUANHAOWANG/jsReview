@@ -35,5 +35,6 @@ var a=new Person('niba',15)//a 为实例
 console.log(a)
 //undefined 指定义未赋值
 //null 需要赋值为null
+//回收   给变量赋值null 回收
 var b=null
 console.log(typeof b)
