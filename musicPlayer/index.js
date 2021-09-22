@@ -9,7 +9,7 @@ const progressContainer = document.getElementById('progress-container')
 const title = document.getElementById('title')
 const cover = document.getElementById('cover')
 // Songs titles array
-const songs = ['blue-reeves', 'slow-snow', 'the-roads'];
+const songs = ['differential-pressure', 'o', 'welcome-to-the-jungle'];
 //Keep track of song 
 let songIndex = 2;
 //Initially load song details into DOM
@@ -17,8 +17,8 @@ loadSong(songs[songIndex])
 //Update song details
 function loadSong(song) {
   title.innerText = song
-  audio.src = `../assets/audio/${song}.mp3`
-  cover.src = `../assets/images/${song}.jpg`
+  audio.src = `../musicPlayer/audio/${song}.mp3`
+  cover.src = `../musicPlayer/images/${song}.jpg`
 }
 // Play song 
 function playSong() {
